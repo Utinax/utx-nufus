@@ -1,6 +1,8 @@
 Config = {}
 
 Config.Ucret = 500 -- Kimlik almanın ücreti.
+Config.IsimUcret = 10000 -- İsim değiştirmenin ücreti.
+Config.SoyisimUcret = 20000 -- Soyisim değiştirmenin ücreti.
 
 Config.TextYazi = '~g~E~s~ - Nüfus Memuru' -- Nüfus memurunun üstündeki yazı.
 
