@@ -5,4 +5,6 @@ Script benim yapımımdır, üzerinde dilediğiniz gibi oynama yapıp geliştire
 
 Video: https://streamable.com/tkt6ff
 
-Gereklilikler: https://github.com/ONyambura/mythic_progbar
+Gereksinimler:
+- https://github.com/ONyambura/mythic_progbar
+- https://github.com/jonassvensson4/jsfour-idcard
