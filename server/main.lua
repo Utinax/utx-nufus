@@ -23,8 +23,8 @@ AddEventHandler('utx_nufus:isim', function(firstname)
     local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	
-	if(xPlayer.getMoney() >= 10000) then
-		xPlayer.removeMoney(10000)
+	if(xPlayer.getMoney() >= Config.IsimUcret) then
+		xPlayer.removeMoney(Config.IsimUcret)
 		
         MySQL.Async.execute('UPDATE users SET firstname = @firstname WHERE identifier = @identifier', {
             ['@firstname'] = firstname,
@@ -45,8 +45,8 @@ AddEventHandler('utx_nufus:soyisim', function(lastname)
     local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	
-	if(xPlayer.getMoney() >= 20000) then
-		xPlayer.removeMoney(20000)
+	if(xPlayer.getMoney() >= Config.SoyisimUcret) then
+		xPlayer.removeMoney(Config.SoyisimUcret)
 		
 		MySQL.Async.execute('UPDATE users SET lastname = @lastname WHERE identifier = @identifier', {
 			['@lastname'] = lastname,
