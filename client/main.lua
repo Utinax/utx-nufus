@@ -285,7 +285,7 @@ function OpenShowGiveID()
 			if distance ~= -1 and distance <= 3.0 then
 			TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player))
 			else
-				ESX.ShowNotification('Yakında oyuncu yok!')
+				exports['mythic_notify']:SendAlert('inform', 'Yakında oyuncu yok!')
 			end
 		end
 	end,
