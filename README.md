@@ -8,3 +8,4 @@ Video: https://streamable.com/tkt6ff
 Gereksinimler:
 - https://github.com/ONyambura/mythic_progbar
 - https://github.com/jonassvensson4/jsfour-idcard
+- https://github.com/FlawwsX/mythic_notify
