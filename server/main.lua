@@ -2,8 +2,8 @@ ESX = nil
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-RegisterServerEvent('utx_nufus:kimlikver')
-AddEventHandler('utx_nufus:kimlikver', function(item, count)
+RegisterServerEvent('utx-nufus:kimlikver')
+AddEventHandler('utx-nufus:kimlikver', function(item, count)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local money = xPlayer.getMoney()
@@ -19,8 +19,8 @@ AddEventHandler('utx_nufus:kimlikver', function(item, count)
 	end
 end)
 
-RegisterServerEvent('utx_nufus:isim')
-AddEventHandler('utx_nufus:isim', function(firstname)
+RegisterServerEvent('utx-nufus:isim')
+AddEventHandler('utx-nufus:isim', function(firstname)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	
@@ -41,8 +41,8 @@ AddEventHandler('utx_nufus:isim', function(firstname)
 	end
 end)
 
-RegisterServerEvent('utx_nufus:soyisim')
-AddEventHandler('utx_nufus:soyisim', function(lastname)
+RegisterServerEvent('utx-nufus:soyisim')
+AddEventHandler('utx-nufus:soyisim', function(lastname)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	
@@ -65,5 +65,5 @@ end)
 
 ESX.RegisterUsableItem('kimlik', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
-	TriggerClientEvent('utx_nufus:kimlikmenu', source);
+	TriggerClientEvent('utx-nufus:kimlikmenu', source);
 end)
