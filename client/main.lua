@@ -9,12 +9,12 @@ Citizen.CreateThread(function()
 	end
 end)
 
-RegisterNetEvent('utx_nufus:kimlikmenu')
-AddEventHandler('utx_nufus:kimlikmenu', function()
+RegisterNetEvent('utx-nufus:kimlikmenu')
+AddEventHandler('utx-nufus:kimlikmenu', function()
 	OpenShowGiveID()
 end)
 
-AddEventHandler('utx_nufus:hasExitedMarker', function(zone)
+AddEventHandler('utx-nufus:hasExitedMarker', function(zone)
 	ESX.UI.Menu.CloseAll()
 end)
 
@@ -58,7 +58,7 @@ Citizen.CreateThread(function()
 
 		if not isInMarker and hasAlreadyEnteredMarker then
 			hasAlreadyEnteredMarker = false
-			TriggerEvent('utx_nufus:hasExitedMarker')
+			TriggerEvent('utx-nufus:hasExitedMarker')
 		end
 
 		if perform then
@@ -99,7 +99,7 @@ function KimlikMenu()
 		if data.current.value == 'kimlik_ver' then
 			menu.close()
 			exports['mythic_progbar']:Progress({
-				name = "utx_nufus:kimlikver",
+				name = "utx-nufus:kimlikver",
 				duration = 3250,
 				label = 'Bilgileriniz Kontrol Ediliyor...',
 				useWhileDead = false,
@@ -129,7 +129,7 @@ function KimlikMenu()
 				},
 			}, function(cancelled)
 				if not cancelled then
-					TriggerServerEvent('utx_nufus:kimlikver', 'kimlik', 1)
+					TriggerServerEvent('utx-nufus:kimlikver', 'kimlik', 1)
 				else
 					-- Do Something If Action Was Cancelled
 				end
@@ -199,7 +199,7 @@ function IsimDegistir()
 							},
 						}, function(cancelled)
 							if not cancelled then
-								TriggerServerEvent('utx_nufus:isim', data3.value)
+								TriggerServerEvent('utx-nufus:isim', data3.value)
 							else
 								-- Do Something If Action Was Cancelled
 							end
@@ -248,7 +248,7 @@ function IsimDegistir()
 							},
 						}, function(cancelled)
 							if not cancelled then
-								TriggerServerEvent('utx_nufus:soyisim', data4.value)
+								TriggerServerEvent('utx-nufus:soyisim', data4.value)
 							else
 								-- Do Something If Action Was Cancelled
 							end
