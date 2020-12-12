@@ -1,4 +1,4 @@
-# utx_nufus
+# utx-nufus
 Nüfus Müdürlüğü
 
 Script benim yapımımdır, üzerinde dilediğiniz gibi oynama yapıp geliştirebilirsiniz. Tek ricam, ismini değiştirmemenizdir.
