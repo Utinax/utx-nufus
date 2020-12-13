@@ -9,3 +9,5 @@ Gereksinimler:
 - https://github.com/ONyambura/mythic_progbar
 - https://github.com/jonassvensson4/jsfour-idcard
 - https://github.com/FlawwsX/mythic_notify
+
+Herhangi bir sorununuz ya da sıkıntınız olursa discord sunucum: https://discord.gg/kvfWuMj6FN
